@@ -13,7 +13,22 @@ public class LinkedListNode<E> {
     }
 
     public LinkedListNode(E data) {
+        this.data = data;
+    }
 
+    public LinkedListNode<E> getNext() {
+        return next;
+    }
+
+    public E getData() {
+        return data;
+    }
+
+    public void setNext(LinkedListNode<E> next) {
+        this.next = next;
+    }
+
+    public void setData(E data) {
         this.data = data;
     }
 }
